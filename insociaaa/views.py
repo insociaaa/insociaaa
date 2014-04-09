@@ -18,3 +18,6 @@ def twitter(request):
 
 def yahoo(request):
     return render(request, 'yahoo.html')
+
+def et(request):
+  return render(request, 'et.html')
