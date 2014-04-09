@@ -1,0 +1,41 @@
+{% extends "base.html" %}    
+
+{% block content %}
+<div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-sidebar">
+            <li><a href="login">Login</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="facebook">Facbook</a></li>
+            <li><a href="linkedin">LinkedIn</a></li>
+            <li><a href="twitter">Twitter</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="cnn">CNN</a></li>
+            <li><a href="forbes">Forbes</a></li>
+            <li class="active"><a href="et">ET</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Amazon</a></li>
+            <li><a href="">Ebay</a></li>
+          </ul>
+          <ul class="nav nav-sidebar">
+            <li><a href="">Expedia</a></li>
+          </ul>
+        </div>
+      </div>
+
+</div>
+
+{% for k in results %}
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+  {% if k.title %}
+    <a href="{{ k.link }}"><h1> {{ k.title }} </h1></a>
+    <h5>{{ k.title_detail.value }}</h5>
+  {% endif %}
+</div>
+{% endfor %}
+
+{% endblock %}
