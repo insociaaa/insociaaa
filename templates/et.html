@@ -2,11 +2,30 @@
 
 {% block content %}
 
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+{% for header in yt %}
+{% for title, details in header.items %}
+<div class="btn-group">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+    {{ title }} <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    {% for abc in details %}
+    {% for m,n in abc.items %}
+    <li><a href="{{ n.view }}">{{ m }}</a></li>
+    {% endfor %}
+    {% endfor %}
+  </ul>
+</div>
+{% endfor %}
+{% endfor %}
+</div>
+
 {% for k in results %}
 <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
   {% if k.title %}
     <a href="{{ k.link }}"><h1> {{ k.title }} </h1></a>
-    <h5>{{ k.title_detail.value }}</h5>
+    <h5>{{ k.summary }}</h5>
   {% endif %}
 </div>
 {% endfor %}
