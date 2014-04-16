@@ -1,12 +1,19 @@
 from django.shortcuts import render
 import feedparser
 import pprint
+import yaml
 
 # Create your views here.
+def tasks():
+  yt = yaml.load(open("./app_et/tasks.yaml"))
+  pprint.pprint(yt)
+  return yt
+
 def et(request):
+  yt = tasks()
   content = feedparser.parse("http://economictimes.indiatimes.com/rssfeedsdefault.cms")
   pprint.pprint(content)
-  return render(request, 'et.html', {'results': content['entries']})
+  return render(request, 'et.html', {'yt': yt, 'results': content['entries']})
 
 def et_home(request):
   content = feedparser.parse(rss_et_home)
