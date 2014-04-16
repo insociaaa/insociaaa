@@ -1,0 +1,63 @@
+- Home:
+    - Home:
+        rss: http://economictimes.indiatimes.com/rssfeedsdefault.cms
+        view: et_home
+- Top_Stories:
+    - Top_Stories:
+        rss: http://economictimes.indiatimes.com/rssfeedstopstories.cms
+        view: et_top_stories
+- News:
+    - News:
+        rss: http://economictimes.indiatimes.com/News/rssfeeds/1715249553.cms
+        view: et_news
+    - News_By_Company:
+    - News_By_Industry:
+    - Economy:
+    - International_Business:
+    - SMB:
+    - Politics/Nation:
+- Market:
+    - Market:
+        rss: http://economictimes.indiatimes.com/Markets/markets/rssfeeds/1977021501.cms
+        view: et_market
+    - Stocks:
+    - Global_Market:
+    - Forex:
+    - IPOs:
+    - Bonds:
+    - Money:
+    - Commodities:
+    - Bullion:
+    - Real_Estate:
+    - Analysis:
+- Personal_Finance:
+    - Personal_Finance:
+        rss: http://economictimes.indiatimes.com/rssfeeds/837555174.cms
+        view: et_personal_finance
+    - Mutual_Funds:
+    - Fixed_Deposits:
+    - Insurance:
+    - Art:
+    - Loan_Centre:
+    - Credit_Cards:
+    - Tax_Savers:
+    - Savings_Centre:
+- Infotech:
+    - Infotech:
+        rss: http://economictimes.indiatimes.com/Infotech/rssfeeds/13357270.cms
+        view:
+    - Hardware:
+    - Software:
+    - Internet:
+    - ITeS:
+- Opinions:
+    - Opinions:
+        rss: http://economictimes.indiatimes.com/opinion/opinionshome/rssfeeds/897228639.cms
+        view:
+    - Your_Say:
+    - Comments/Analysis:
+    - Cosmic_Uplink:
+    - Editorial:
+    - Opinion_Poll:
+    - Columnists:
+    - Interviews:
